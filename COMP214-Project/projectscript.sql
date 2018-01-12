@@ -69,6 +69,8 @@ INSERT INTO project_genre
 	VALUES (2, 'Informational');
 INSERT INTO project_genre 
 	VALUES (3, 'Fantasy');
+INSERT INTO project_genre 
+	VALUES (4, 'Thriller');
 
 CREATE TABLE project_author (
 	authorID	NUMBER(5),
@@ -84,6 +86,8 @@ INSERT INTO project_author
 	VALUES (3, 'George R.R. Martin');
 INSERT INTO project_author
 	VALUES (4, 'J.R.R. Tolkien');
+INSERT INTO project_author
+	VALUES (5, 'J.K. Rowling');
 
 CREATE TABLE project_friend (
 	friendID	NUMBER(5),
@@ -123,6 +127,8 @@ INSERT INTO project_books
 	VALUES (3,'9788496422612', 'A Game of Thrones', 694, 1, 2, 3, 3, 'great read');
 INSERT INTO project_books
 	VALUES (4,'9781850894148', 'The Lord of the Rings: The Fellowship of the Ring', 423, 1, 2, 4, 3, 'great read');
+INSERT INTO project_books
+	VALUES (5,'0439358078989', 'Harry Potter and The Order Of Phoenix', 870, 1, 2, 5, 4, NULL);
 
 CREATE OR REPLACE PROCEDURE common_book_info
 (p_search IN NVARCHAR2, v_refcur OUT sys_refcursor)
